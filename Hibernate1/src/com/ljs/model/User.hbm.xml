@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="com.ljs.model">
+    <class name="User">
+        <id name="id" column="id" type="java.lang.Integer"></id>
+        <property name="uName" type="java.lang.String" column="uname"/>
+        <property name="uPass" type="java.lang.String" column="upass"/>
+        <property name="age" type="java.lang.Integer" column="age"/>
+        <property name="phone" type="java.lang.String" column="phone"/>    	
+    </class>
+</hibernate-mapping>

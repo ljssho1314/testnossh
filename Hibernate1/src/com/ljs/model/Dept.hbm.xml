@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="com.ljs.model">
+    <class name="Dept">
+        <id name="deptno" column="deptno" type="java.lang.Integer"></id>
+        <property name="deptname" type="java.lang.String" column="deptname"/>
+        <set name="emps">
+        	<key column="dept"></key><!-- 员工表里的外键列名 -->
+        	<one-to-many class="com.ljs.model.Emp"/><!-- 对应的javabean -->
+        </set>	
+    </class>
+</hibernate-mapping>
