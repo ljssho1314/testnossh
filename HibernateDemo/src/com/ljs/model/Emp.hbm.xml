@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="com.ljs.model">
+    <class name="Emp" table="emp">
+        <id name="id" column="id" type="java.lang.Integer">
+        </id>
+        <property name="name"  column="name" type="java.lang.String"/>
+        <property name="sex"  column="sex" type="java.lang.String"/>
+        <property name="phone"  column="phone" type="java.lang.String"/>
+        <property name="address"  column="address" type="java.lang.String"/>
+        <property name="salary"  column="salary" type="java.lang.Double"/>
+        <property name="top"  column="top" type="java.lang.Integer"/> 
+        <property name="deptno"  column="dept" type="java.lang.Integer" insert="false" update="false"/> 
+           
+         <!--    
+		<many-to-one  name="deptM" column="dept" class="com.ljs.model.Dept" insert="false" update="false"></many-to-one>
+ 		 -->
+    </class>
+
+</hibernate-mapping>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/jre1.8.0_60"/>
+	<classpathentry kind="lib" path="D:/less/1009课程/web框架/hibernate/框架01/hibernate_main_jar/antlr-2.7.6.jar"/>
+	<classpathentry kind="lib" path="D:/less/1009课程/web框架/hibernate/框架01/hibernate_main_jar/commons-collections-3.1.jar"/>
+	<classpathentry kind="lib" path="D:/less/1009课程/web框架/hibernate/框架01/hibernate_main_jar/dom4j-1.6.1.jar"/>
+	<classpathentry kind="lib" path="D:/less/1009课程/web框架/hibernate/框架01/hibernate_main_jar/hibernate3.jar"/>
+	<classpathentry kind="lib" path="D:/less/1009课程/web框架/hibernate/框架01/hibernate_main_jar/javassist-3.9.0.GA.jar"/>
+	<classpathentry kind="lib" path="D:/less/1009课程/web框架/hibernate/框架01/hibernate_main_jar/jta-1.1.jar"/>
+	<classpathentry kind="lib" path="D:/less/1009课程/web框架/hibernate/框架01/hibernate_main_jar/slf4j-api-1.5.8.jar"/>
+	<classpathentry kind="lib" path="D:/less/1009课程/web框架/hibernate/框架01/hibernate_main_jar/slf4j-nop-1.5.8.jar"/>
+	<classpathentry kind="lib" path="D:/file_tools/mysql-connector-java-5.0.4-bin.jar"/>
+	<classpathentry kind="lib" path="D:/file_tools/hibernate_main_jar/commons-logging-1.0.4.jar"/>
+	<classpathentry kind="lib" path="D:/file_tools/hibernate_main_jar/ehcache-1.2.3.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

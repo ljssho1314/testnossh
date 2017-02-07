@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+    <session-factory>   
+ 			<!-- 启用hibernate二级缓存 -->
+	   <property name="hibernate.cache.use_second_level_cache">true</property>    
+       <!-- 设置二级缓存插件EHCache的Provider类-->  
+     	<property name="hibernate.cache.provider_class">  
+         org.hibernate.cache.EhCacheProvider  
+      	</property> 
+        <!-- 声明数据库连接参数 -->
+        <property name="connection.driver_class">com.mysql.jdbc.Driver</property>
+        <property name="connection.url">jdbc:mysql://localhost:3306/java_1009</property>
+        <property name="connection.username">root</property>
+        <property name="connection.password">123456</property>
+        <!-- SQL数据方言 -->
+        <property name="dialect">org.hibernate.dialect.MySQLDialect</property>
+        <!-- 配置控制台是否展示sql -->
+        <property name="show_sql">true</property>
+
+        <!-- 与数据库里的表进行映射 -->
+        <mapping resource="com/ljs/model/User.hbm.xml"/>
+        <mapping resource="com/ljs/model/Emp.hbm.xml"/>
+        <mapping resource="com/ljs/model/Dept.hbm.xml"/>        
+          <!-- 加载要被缓存的类 -->
+        <class-cache usage="read-write" class="com.ljs.model.User"/>
+        
+    </session-factory>
+</hibernate-configuration>
